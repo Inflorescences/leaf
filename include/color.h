@@ -14,3 +14,9 @@ typedef struct values
 void line(int color, int x, int y);
 
 void rectangle(int color, int x, int y);
+
+void circle (int color, int x, int y);
+
+void hsvcircle(int x, int y);
+
+void hslcircle(int x, int y);
