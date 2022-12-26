@@ -10,11 +10,11 @@ void line(int color, int x, int y)
     values.g = 0xff / 255; 
     values.b = 0xff / 255;
     values.a = 0;
-    }
-    
+
     color += 32;
+    }
     return color;
-    
+
     if (x && y)
     {
         x - y / x * y & color;
@@ -32,13 +32,14 @@ void rectangle(int color, int x, int y)
     values.a = 0;
 
     color += 32;
-    return color;
    }
-
+   return color;
+   
    if (x && y)
    {
     x - y / x * y & color;
     x + y / x - y & color;
    }
+   return y;
 }
 
