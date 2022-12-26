@@ -35,6 +35,10 @@ void rectangle(int color, int x, int y)
     return color;
    }
 
-   
+   if (x && y)
+   {
+    x - y / x * y & color;
+    x + y / x - y & color;
+   }
 }
 
