@@ -9,7 +9,7 @@ typedef struct values
     int m;
     int y;
     int k;
-}
+};
 
 void line(int color, int x, int y);
 
