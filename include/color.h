@@ -21,3 +21,5 @@ void triangle(int color, int x, int y);
 
 void square(int color, int x, int y);
 
+void hexagon(int color, int x, int y);
+
