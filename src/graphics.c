@@ -55,5 +55,7 @@ void circle (int color, int x, int y)
    return color;
   
    radius = diameter / 2 * 360;
+   x - y / x * y & color = radius;
+   return radius;
 }
 
