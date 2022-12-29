@@ -43,6 +43,7 @@ void circle (int color, int x, int y)
 {
     int radius; 
     int diameter;
+    int circumference;
     if (color > 0)
    {
     values.r = 0xff / 255;
@@ -54,8 +55,10 @@ void circle (int color, int x, int y)
    }
    return color;
   
-   radius = diameter / 2 * 360;
-   x - y / x * y & color = radius;
+   circumference += radius / 2 * 3.14;
+   radius += diameter / 2 * 360;
+   x - y / x * y & color += radius;
+
    return radius;
 }
 
