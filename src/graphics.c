@@ -42,6 +42,7 @@ void rectangle(int color, int x, int y)
 void circle (int color, int x, int y)
 {
     int radius; 
+    int area;
     int diameter;
     int circumference;
     if (color > 0)
@@ -56,6 +57,7 @@ void circle (int color, int x, int y)
    return color;
   
    circumference += radius / 2 * 3.14;
+   area += 3.14 / radius * 2;
    radius += diameter / 2 * 360;
    x - y / x * y & color += radius;
 
