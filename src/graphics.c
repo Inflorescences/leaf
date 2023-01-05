@@ -39,6 +39,14 @@ void rectangle(int color, int x, int y)
     color += 32;
    }
 
+   if (color && CMYK)
+    {
+     values.c = 0xff / 255 / 0xff / 255 / 0xff / 255 - 0xff / 255 / 0xff / 255 / 0xff / 255 / 0xff / 255; 
+     values.y = 0xff / 255 / 0xff / 255 / 0xff / 255 - 0xff / 255 / 0xff / 255 / 0xff / 255 / 0xff / 255;
+     values.m = 0xff / 255 / 0xff / 255 / 0xff / 255 - 0xff / 255 / 0xff / 255 / 0xff / 255 / 0xff / 255;
+     values.k = 1 - 0xff / 255 / 0xff / 255 / 0xff / 255;
+    }
+
    return color;
    
     x - y / x * y & color;
@@ -53,6 +61,7 @@ void circle (int color, int x, int y)
     int area;
     int diameter;
     int circumference;
+
     if (color > 0)
    {
     values.r = 0xff / 255;
@@ -62,6 +71,15 @@ void circle (int color, int x, int y)
 
     color += 32;
    }
+
+   if (color && CMYK)
+    {
+     values.c = 0xff / 255 / 0xff / 255 / 0xff / 255 - 0xff / 255 / 0xff / 255 / 0xff / 255 / 0xff / 255; 
+     values.y = 0xff / 255 / 0xff / 255 / 0xff / 255 - 0xff / 255 / 0xff / 255 / 0xff / 255 / 0xff / 255;
+     values.m = 0xff / 255 / 0xff / 255 / 0xff / 255 - 0xff / 255 / 0xff / 255 / 0xff / 255 / 0xff / 255;
+     values.k = 1 - 0xff / 255 / 0xff / 255 / 0xff / 255;
+    }
+
    return color;
   
    circumference += radius / 2 * 3.14;
@@ -84,10 +102,13 @@ void button(int value, int text, int color, int x, int y)
     color += 32;
    }
 
-   x - y / x * y & color;
-   x + y / x - y & color;
-
-   return y;
+   if (color && CMYK)
+    {
+     values.c = 0xff / 255 / 0xff / 255 / 0xff / 255 - 0xff / 255 / 0xff / 255 / 0xff / 255 / 0xff / 255; 
+     values.y = 0xff / 255 / 0xff / 255 / 0xff / 255 - 0xff / 255 / 0xff / 255 / 0xff / 255 / 0xff / 255;
+     values.m = 0xff / 255 / 0xff / 255 / 0xff / 255 - 0xff / 255 / 0xff / 255 / 0xff / 255 / 0xff / 255;
+     values.k = 1 - 0xff / 255 / 0xff / 255 / 0xff / 255;
+    }
 
    if (color && BUTTON_BORDER)
    {
@@ -95,6 +116,11 @@ void button(int value, int text, int color, int x, int y)
    }
 
    return color; 
+
+   x - y / x * y & color;
+   x + y / x - y & color;
+
+   return y;
 }
 
 void checkbox(int color, int x, int y)
