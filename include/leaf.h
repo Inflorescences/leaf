@@ -1,3 +1,10 @@
+#define HSL
+#define HSV
+#define RGBA
+#define CMYK
+#define BUTTON_BORDER
+
+
 typedef struct values
 {
     int r;
