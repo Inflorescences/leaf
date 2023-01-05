@@ -23,3 +23,8 @@ void square(int color, int x, int y);
 
 void hexagon(int color, int x, int y);
 
+void button(int color, int x, int y);
+
+void checkbox(int color, int x, int y);
+
+void slider(int color, int x, int y);
