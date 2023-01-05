@@ -1,6 +1,4 @@
-#include "color.h"
-
-/* 0xFF0000 is 255, 0, 0 */ /* divide 255 */ /* 0.0 */ /* RRGGBB */ /* RGBA8888 */ /* ARGB8888 */
+#include "leaf.h"
 
 void line(int color, int x, int y)
 {
