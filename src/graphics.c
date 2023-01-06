@@ -82,11 +82,18 @@ void circle (int color, int x, int y)
 
     if (color && HSV)
     {
-     
+      int h;
+      int s;
+      int v;
+
+      h = 0 
     }
 
     if (color && HSL)
     {
+     int h;
+     int s;
+     int l;
     }
 
    return color;
